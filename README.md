@@ -3,13 +3,13 @@
 >### ***This project fork upgrades the Metabase plugin for Databricks to use latest Simba JDBC 42 driver and adds support to connect to Databricks SQL compute endpoints***
 
 
-All you need you do is drop the driver in your Metabase `plugins/` directory. You can grab it [here](https://github.com/ewok/metabase-sparksql-databricks-driver/releases/download/v1.2.1/sparksql-databricks.metabase-driver.jar) or build it yourself:
+All you need you do is drop the driver in your Metabase `plugins/` directory. You can grab it [here](https://github.com/ewok/metabase-sparksql-databricks-driver/releases/download/v1.2.1/sparksql_databricks.metabase-driver.jar) or build it yourself:
 
 ## Building the driver (the fast way)
 
 Use the `Dockerfile` on this repo:
 
-- `curl -L "https://github.com/ewok/metabase-sparksql-databricks-driver/releases/download/v1.2.1/sparksql-databricks.metabase-driver.jar" -o sparksql-databricks.metabase-driver.jar`
+- `curl -L "https://github.com/ewok/metabase-sparksql-databricks-driver/releases/download/v1.2.1/sparksql_databricks.metabase-driver.jar" -o sparksql-databricks.metabase-driver.jar`
 - `docker build -t metabase:metabase-head-databricks-1.2.1 .`
 
 And you can deploy to some docker registry of your own and use the image!
